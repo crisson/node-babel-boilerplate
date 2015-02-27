@@ -1,0 +1,27 @@
+{
+  "name": "node-babel-boilerplate",
+  "version": "0.0.1",
+  "description": "Boilerlate for creating a modular client/server node/io.js app using Babel transpilation",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha -r 6to5/polyfill -R min  --experimental true 'src/**/*-test.js'"
+  },
+  "keywords": [
+    "babel",
+    "boilerplate",
+    "modular"
+  ],
+  "author": "Crisson Jno-Charles",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^4.6.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-less": "^3.0.1",
+    "gulp-minify-css": "^0.4.6",
+    "gulp-uglify": "^1.1.0",
+    "mocha": "^2.1.0",
+    "node-notifier": "^4.1.2"
+  }
+}
