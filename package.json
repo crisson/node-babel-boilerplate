@@ -4,7 +4,8 @@
   "description": "Boilerlate for creating a modular client/server node/io.js app using Babel transpilation",
   "main": "lib/index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha -r 6to5/polyfill -R min  --experimental true 'src/**/*-test.js'"
+    "test": "./node_modules/mocha/bin/mocha -r babel/polyfill -R dot  --experimental true 'src/**/*-test.js'",
+    "start": "babel-node src/server"
   },
   "keywords": [
     "babel",
