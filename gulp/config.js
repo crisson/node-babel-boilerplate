@@ -13,12 +13,7 @@ module.exports = {
         }
     },
     
-    apiServer: {
-        main: 'lib/api/index.js',
-        watch: [
-            'lib/api/index.js',
-            'lib/api/**/*.js',
-            '!lib/api/**/*-test.js'
-        ]
-    }
+    less: {},
+    img: {},
+    prepareDeploy: {}
 }

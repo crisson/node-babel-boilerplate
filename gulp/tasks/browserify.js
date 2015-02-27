@@ -2,7 +2,7 @@ var fs = require("fs");
 
 var gulp = require('gulp')
 var browserify = require("browserify");
-var to5ify = require("6to5ify");
+var babelify = require("babelify");
 var uglify = require('gulp-uglify');
 var bufferify = require('vinyl-buffer')
 var source = require('vinyl-source-stream');
@@ -34,7 +34,7 @@ gulp.task('browserify', function(){
     })
 
     return bundler
-      .transform(to5ify)
+      .transform(babelify)
       .require(config.browserify.entry, { entry: true })
       .bundle()
       .on("error", handleError)
