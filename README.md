@@ -1,8 +1,8 @@
 # node-babel-boilerplate
 
-This repository represents a folder and configuration boilerplate that I've found useful for writing
-client-services nodejs applications.  It follows the structure recommended in this 
-[Strongloop blogpost](https://strongloop.com/strongblog/modular-node-js-express/), but also includes
+This repository represents a folder and configuration boilerplate that I have found useful for writing
+client--service(s) nodejs applications, where all services reside within the same repository.  It follows the structure recommended in this 
+[Strongloop blogpost](https://strongloop.com/strongblog/modular-node-js-express/), while also including
 libraries that I almost always include in my `node.js` applications.
 
 ## Getting started
